@@ -1,0 +1,13 @@
+C:\Users\devin\source\repos\SQLManager\SQLManager.ConsoleApp\bin\Debug\netcoreapp3.1\SQLManager.ConsoleApp.exe
+C:\Users\devin\source\repos\SQLManager\SQLManager.ConsoleApp\bin\Debug\netcoreapp3.1\SQLManager.ConsoleApp.deps.json
+C:\Users\devin\source\repos\SQLManager\SQLManager.ConsoleApp\bin\Debug\netcoreapp3.1\SQLManager.ConsoleApp.runtimeconfig.json
+C:\Users\devin\source\repos\SQLManager\SQLManager.ConsoleApp\bin\Debug\netcoreapp3.1\SQLManager.ConsoleApp.runtimeconfig.dev.json
+C:\Users\devin\source\repos\SQLManager\SQLManager.ConsoleApp\bin\Debug\netcoreapp3.1\SQLManager.ConsoleApp.dll
+C:\Users\devin\source\repos\SQLManager\SQLManager.ConsoleApp\bin\Debug\netcoreapp3.1\SQLManager.ConsoleApp.pdb
+C:\Users\devin\source\repos\SQLManager\SQLManager.ConsoleApp\obj\Debug\netcoreapp3.1\SQLManager.ConsoleApp.csprojAssemblyReference.cache
+C:\Users\devin\source\repos\SQLManager\SQLManager.ConsoleApp\obj\Debug\netcoreapp3.1\SQLManager.ConsoleApp.AssemblyInfoInputs.cache
+C:\Users\devin\source\repos\SQLManager\SQLManager.ConsoleApp\obj\Debug\netcoreapp3.1\SQLManager.ConsoleApp.AssemblyInfo.cs
+C:\Users\devin\source\repos\SQLManager\SQLManager.ConsoleApp\obj\Debug\netcoreapp3.1\SQLManager.ConsoleApp.csproj.CoreCompileInputs.cache
+C:\Users\devin\source\repos\SQLManager\SQLManager.ConsoleApp\obj\Debug\netcoreapp3.1\SQLManager.ConsoleApp.dll
+C:\Users\devin\source\repos\SQLManager\SQLManager.ConsoleApp\obj\Debug\netcoreapp3.1\SQLManager.ConsoleApp.pdb
+C:\Users\devin\source\repos\SQLManager\SQLManager.ConsoleApp\obj\Debug\netcoreapp3.1\SQLManager.ConsoleApp.genruntimeconfig.cache

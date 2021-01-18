@@ -1,0 +1,9 @@
+C:\Users\devin\source\repos\SQLManager\SQLManager.Core\bin\Debug\netstandard2.0\SQLManager.Core.deps.json
+C:\Users\devin\source\repos\SQLManager\SQLManager.Core\bin\Debug\netstandard2.0\SQLManager.Core.dll
+C:\Users\devin\source\repos\SQLManager\SQLManager.Core\bin\Debug\netstandard2.0\SQLManager.Core.pdb
+C:\Users\devin\source\repos\SQLManager\SQLManager.Core\obj\Debug\netstandard2.0\SQLManager.Core.csprojAssemblyReference.cache
+C:\Users\devin\source\repos\SQLManager\SQLManager.Core\obj\Debug\netstandard2.0\SQLManager.Core.AssemblyInfoInputs.cache
+C:\Users\devin\source\repos\SQLManager\SQLManager.Core\obj\Debug\netstandard2.0\SQLManager.Core.AssemblyInfo.cs
+C:\Users\devin\source\repos\SQLManager\SQLManager.Core\obj\Debug\netstandard2.0\SQLManager.Core.csproj.CoreCompileInputs.cache
+C:\Users\devin\source\repos\SQLManager\SQLManager.Core\obj\Debug\netstandard2.0\SQLManager.Core.dll
+C:\Users\devin\source\repos\SQLManager\SQLManager.Core\obj\Debug\netstandard2.0\SQLManager.Core.pdb
