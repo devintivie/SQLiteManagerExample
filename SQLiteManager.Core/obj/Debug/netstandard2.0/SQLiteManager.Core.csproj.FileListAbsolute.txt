@@ -14,4 +14,3 @@ C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.Core\obj\Debug\netstanda
 C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.Core\obj\Debug\netstandard2.0\SQLiteManager.Core.csproj.CoreCompileInputs.cache
 C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.Core\obj\Debug\netstandard2.0\SQLiteManager.Core.dll
 C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.Core\obj\Debug\netstandard2.0\SQLiteManager.Core.pdb
-C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.Core\obj\Debug\netstandard2.0\SQLiteManager.Core.csprojAssemblyReference.cache

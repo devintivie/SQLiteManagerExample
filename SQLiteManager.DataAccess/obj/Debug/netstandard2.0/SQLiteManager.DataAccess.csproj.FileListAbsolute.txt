@@ -1,0 +1,14 @@
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\obj\Debug\netstandard2.0\SQLiteManager.DataAccess.csprojAssemblyReference.cache
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\obj\Debug\netstandard2.0\SQLiteManager.DataAccess.AssemblyInfoInputs.cache
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\obj\Debug\netstandard2.0\SQLiteManager.DataAccess.AssemblyInfo.cs
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\obj\Debug\netstandard2.0\SQLiteManager.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\bin\Debug\netstandard2.0\SQLiteManager.DataAccess.deps.json
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\bin\Debug\netstandard2.0\SQLiteManager.DataAccess.dll
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\bin\Debug\netstandard2.0\SQLiteManager.DataAccess.pdb
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\bin\Debug\netstandard2.0\SQLiteManager.Core.dll
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\bin\Debug\netstandard2.0\SQLiteManager.Managers.dll
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\bin\Debug\netstandard2.0\SQLiteManager.Core.pdb
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\bin\Debug\netstandard2.0\SQLiteManager.Managers.pdb
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\obj\Debug\netstandard2.0\SQLiteManager.DataAccess.csproj.CopyComplete
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\obj\Debug\netstandard2.0\SQLiteManager.DataAccess.dll
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.DataAccess\obj\Debug\netstandard2.0\SQLiteManager.DataAccess.pdb

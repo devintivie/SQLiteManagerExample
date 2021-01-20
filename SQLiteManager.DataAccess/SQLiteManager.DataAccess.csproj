@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Data.SQLite.Core" Version="1.0.113.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SQLiteManager.Core\SQLiteManager.Core.csproj" />
+    <ProjectReference Include="..\SQLiteManager.Managers\SQLiteManager.Managers.csproj" />
+  </ItemGroup>
+
+</Project>

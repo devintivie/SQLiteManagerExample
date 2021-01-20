@@ -7,6 +7,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SQLiteManager.Core\SQLiteManager.Core.csproj" />
+    <ProjectReference Include="..\SQLiteManager.DataAccess\SQLiteManager.DataAccess.csproj" />
+    <ProjectReference Include="..\SQLiteManager.Managers\SQLiteManager.Managers.csproj" />
   </ItemGroup>
 
 </Project>

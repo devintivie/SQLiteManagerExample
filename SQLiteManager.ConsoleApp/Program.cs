@@ -2,6 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using SQLiteManager.Core;
+using SQLiteManager.DataAccess;
+using SQLiteManager.Managers;
+
+//using static SQLiteManager.DataAccess.BankAccountDataAccess;
 
 namespace SQLiteLManager.ConsoleApp
 {
@@ -9,10 +13,236 @@ namespace SQLiteLManager.ConsoleApp
     {
         static void Main(string[] args)
         {
-            TestCreateTable();
+            //TestCreateTable();
+            //TestFacadeAccess();
+            TestDateCases();
+            //TestSeparatedAccess();
             Console.ReadLine();
         }
 
+        static async void TestDateCases()
+        {
+            StateManager.Instance.DatabaseName = "date_test";
+            var database = new BudgetDatabase();
+            database.Initialize();
+
+            var transactions = await database.TransactionAccess.GetAllTransactionsAsync();
+            Console.WriteLine("before write");
+            foreach (var item in transactions)
+            {
+                Console.WriteLine(item);
+            }
+
+
+            var date1 = new DateTime(2021, 1, 5);
+            var date2 = new DateTime(2021, 1, 10);
+            var date3 = new DateTime(2021, 1, 15);
+            var date4 = new DateTime(2021, 1, 20);
+
+            var insertTrans1 = new BankTransaction
+            {
+                Timestamp = date1,
+                Completed = false,
+                Amount = 300.00m
+            };
+            var insertTrans2 = new BankTransaction
+            {
+                Timestamp = date2,
+                Completed = true,
+                Amount = 250.00m
+            };
+            var insertTrans3 = new BankTransaction
+            {
+                Timestamp = date3,
+                Completed = false,
+                Amount = 150.00m
+            };
+            var insertTrans4 = new BankTransaction
+            {
+                Timestamp = date4,
+                Completed = false,
+                Amount = 500.00m
+            };
+
+            await database.TransactionAccess.InsertTransactionAsync(insertTrans1);
+            await database.TransactionAccess.InsertTransactionAsync(insertTrans2);
+            await database.TransactionAccess.InsertTransactionAsync(insertTrans3);
+            await database.TransactionAccess.InsertTransactionAsync(insertTrans4);
+
+
+            var filtered = await database.TransactionAccess.GetTransactionsBetweenDates(date3, date4);
+            Console.WriteLine("\nfiltered");
+            foreach (var item in filtered)
+            {
+                Console.WriteLine(item);
+            }
+            transactions = await database.TransactionAccess.GetAllTransactionsAsync();
+            Console.WriteLine("\nafter write");
+            foreach (var item in transactions)
+            {
+                Console.WriteLine(item);
+                await database.TransactionAccess.DeleteTransactionAsync(item.TransactionId);
+            }
+
+
+
+            transactions = await database.TransactionAccess.GetAllTransactionsAsync();
+            Console.WriteLine("\nafter delete");
+            foreach (var item in transactions)
+            {
+                Console.WriteLine(item);
+            }
+
+
+
+
+
+
+
+        }
+
+        static async void TestFacadeAccess()
+        {
+            StateManager.Instance.DatabaseName = "test3";
+            var database = new BudgetDatabase();
+            database.Initialize();
+
+            var recv = await database.AccountAccess.GetAllAccountsAsync();
+
+            Console.WriteLine($"first pass count = {recv.Count}");
+            foreach (var item in recv)
+            {
+                Console.WriteLine(item);
+            }
+
+            var newAcct = new BankAccount
+            {
+                Nickname = "MainAccount",
+                AccountNumber = "12345678",
+                BankName = "Main Street Bank"
+            };
+            var added = await database.AccountAccess.InsertAccountAsync(newAcct);
+
+            //var dbAcct = await database.AccountAccess.GetAccountAsync(added.Nickname);
+            var bal = new Balance
+            {
+                Amount = 200.00m,
+                Timestamp = DateTime.Now,
+                AccountId = added.LastId 
+                //BankAccount = dbAcct
+            };
+
+
+            var balAdded = await database.BalanceAccess.InsertBalanceAsync(bal);
+            Console.WriteLine($"Balances added = {balAdded.RowsAffected}");
+
+            var balances = await database.BalanceAccess.GetAllBalancesAsync();
+
+            Console.WriteLine("Balances.....");
+            foreach (var balance in balances)
+            {
+                Console.WriteLine(balance);
+            }
+
+            Console.WriteLine($"{added} entries added");
+
+            recv = await database.AccountAccess.GetAllAccountsAsync();
+            Console.WriteLine($"second pass count = {recv.Count}");
+            foreach (var item in recv)
+            {
+                Console.WriteLine(item);
+            }
+
+            var toUpdate = await database.AccountAccess.GetAccountAsync(newAcct.Nickname);
+            Console.WriteLine("db.GetAccount");
+            Console.WriteLine(toUpdate);
+
+            toUpdate.AccountNumber = "157849";
+
+            await database.AccountAccess.UpdateAccountAsync(toUpdate);
+            recv = await database.AccountAccess.GetAllAccountsAsync();
+            Console.WriteLine($"update pass count = {recv.Count}");
+            foreach (var item in recv)
+            {
+                Console.WriteLine(item);
+            }
+
+            //var balance = new Balance()
+
+
+
+            var deleted = await database.AccountAccess.DeleteAccountAsync(recv.Single().AccountID);
+            Console.WriteLine($"{deleted} entries deleted");
+
+            recv = await database.AccountAccess.GetAllAccountsAsync();
+
+            Console.WriteLine($"second pass count = {recv.Count}");
+            foreach (var item in recv)
+            {
+                Console.WriteLine(item);
+            }
+        }
+
+        //static void TestSeparatedAccess()
+        //{
+        //    StateManager.Instance.DatabaseName = "test2";
+        //    var database = new BudgetDatabase();
+        //    database.Initialize();
+
+        //    var recv = GetAccounts();
+
+        //    Console.WriteLine($"first pass count = {recv.Count}");
+        //    foreach (var item in recv)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
+
+        //    var newAcct = new BankAccount
+        //    {
+        //        Nickname = "MainAccount",
+        //        AccountNumber = "12345678",
+        //        BankName = "Main Street Bank"
+        //    };
+        //    var added = InsertAccount(newAcct);
+
+        //    Console.WriteLine($"{added} entries added");
+
+        //    recv = GetAccounts();
+        //    Console.WriteLine($"second pass count = {recv.Count}");
+        //    foreach (var item in recv)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
+
+        //    var toUpdate = GetAccount(newAcct.Nickname);
+        //    Console.WriteLine("db.GetAccount");
+        //    Console.WriteLine(toUpdate);
+
+        //    toUpdate.AccountNumber = "157849";
+
+        //    UpdateAccount(toUpdate);
+        //    recv = GetAccounts();
+        //    Console.WriteLine($"update pass count = {recv.Count}");
+        //    foreach (var item in recv)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
+
+        //    //var balance = new Balance()
+
+
+
+        //    var deleted = DeleteAccount(recv.FirstOrDefault().AccountID);
+        //    Console.WriteLine($"{deleted} entries deleted");
+
+        //    recv = GetAccounts();
+
+        //    Console.WriteLine($"second pass count = {recv.Count}");
+        //    foreach (var item in recv)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
+        //}
         static void TestCreateTable()
         {
             //var manager = new SQLiteHelper("test1");

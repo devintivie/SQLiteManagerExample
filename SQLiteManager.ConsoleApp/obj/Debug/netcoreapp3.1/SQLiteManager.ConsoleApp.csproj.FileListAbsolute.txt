@@ -42,3 +42,8 @@ C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.ConsoleApp\bin\Debug\net
 C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.ConsoleApp\bin\Debug\netcoreapp3.1\SQLiteManager.Core.pdb
 C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.ConsoleApp\obj\Debug\netcoreapp3.1\SQLiteManager.ConsoleApp.csproj.CopyComplete
 C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.ConsoleApp\obj\Debug\netcoreapp3.1\SQLiteManager.ConsoleApp.genruntimeconfig.cache
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.ConsoleApp\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.ConsoleApp\bin\Debug\netcoreapp3.1\SQLiteManager.Managers.dll
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.ConsoleApp\bin\Debug\netcoreapp3.1\SQLiteManager.Managers.pdb
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.ConsoleApp\bin\Debug\netcoreapp3.1\SQLiteManager.DataAccess.dll
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.ConsoleApp\bin\Debug\netcoreapp3.1\SQLiteManager.DataAccess.pdb

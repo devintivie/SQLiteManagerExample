@@ -1,0 +1,8 @@
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.Managers\bin\Debug\netstandard2.0\SQLiteManager.Managers.deps.json
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.Managers\bin\Debug\netstandard2.0\SQLiteManager.Managers.dll
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.Managers\bin\Debug\netstandard2.0\SQLiteManager.Managers.pdb
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.Managers\obj\Debug\netstandard2.0\SQLiteManager.Managers.AssemblyInfoInputs.cache
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.Managers\obj\Debug\netstandard2.0\SQLiteManager.Managers.AssemblyInfo.cs
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.Managers\obj\Debug\netstandard2.0\SQLiteManager.Managers.csproj.CoreCompileInputs.cache
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.Managers\obj\Debug\netstandard2.0\SQLiteManager.Managers.dll
+C:\Users\devin\source\repos\SQLiteManager\SQLiteManager.Managers\obj\Debug\netstandard2.0\SQLiteManager.Managers.pdb
